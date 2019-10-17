@@ -1,6 +1,6 @@
 <h2>Rating input</h2>
 
-<form #f (ngSubmit)="onSubmit(f)" novalidate >
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate >
   Rating 1: <rating-input #r1="ngModel" [(ngModel)]="model.r1" name="r1"></rating-input>
   <br/>
   Rating 2: <rating-input #r2="ngModel" [(ngModel)]="model.r2"name="r2"></rating-input>
@@ -19,5 +19,7 @@
 
 <h2>Info</h2>
 
-https://alligator.io/angular/custom-form-control/
+<p>https://alligator.io/angular/custom-form-control/</p>
+
+<p>https://angular.io/api/forms/NgForm</p>
 
